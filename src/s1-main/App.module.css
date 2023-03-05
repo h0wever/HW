@@ -1,0 +1,24 @@
+.App {
+    --header_height: 60px;
+    max-width: 1280px;
+    padding: 131px 35px 20px;
+    margin: 0 auto;
+}
+
+.hw {
+
+
+}
+
+.hwTitle {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+}
+
+.message img {
+
+}
+.message {
+
+}
