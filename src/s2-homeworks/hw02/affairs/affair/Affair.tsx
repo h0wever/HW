@@ -10,8 +10,9 @@ type AffairPropsType = {
 }
 
 function Affair(props: AffairPropsType) {
-    const deleteCallback = () => {
-        props.affair._id
+
+    const deleteCallback = (id:number) => {
+        props.deleteAffairCallback(id)
     }
 
     const nameClass = s.name + ' ' + s2[props.affair.priority]
@@ -36,7 +37,7 @@ function Affair(props: AffairPropsType) {
                 id={'hw2-button-delete-' + props.affair._id}
                 className={buttonClass}
                 // need to fix
-                onClick={()=>props.affair.priority}
+                onClick={()=>deleteCallback(props.affair._id)}
             >
                 {/*текст кнопки могут изменить студенты*/}
                 X

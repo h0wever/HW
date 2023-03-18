@@ -36,7 +36,7 @@ function Affairs(props: AffairsPropsType) {
         <Affair
             key={a._id} // кеи ОБЯЗАТЕЛЬНЫ в 99% - так что лучше их писать всегда при создании компонент в мапе
             affair={a}
-            deleteAffairCallback={()=>props.deleteAffairCallback(a._id)}
+            deleteAffairCallback={props.deleteAffairCallback}
         />
     ))
 
@@ -54,6 +54,7 @@ function Affairs(props: AffairsPropsType) {
                     id={'hw2-button-high'}
                     onClick={setHigh}
                     className={cnHigh}
+
                 >
                     High
                 </button>
