@@ -41,12 +41,6 @@ export const filterAffairs = (affairs: AffairType[], filter: FilterType): Affair
         return affairs
     }
 
-    // if (filter === 'high') affairs = defaultAffairs.filter(el=> el.priority === 'high')
-    // if (filter === 'middle') affairs = defaultAffairs.filter(el=> el.priority === 'middle')
-    // if (filter === 'low') affairs = defaultAffairs.filter(el=> el.priority === 'low')
-
-
-
     return affairs.filter(el=> el.priority === filter) // need to fix
 }
 export const deleteAffair = (affairs: AffairType[], _id: number): any => {
