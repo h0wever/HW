@@ -5,25 +5,27 @@ import s from './Affairs.module.css'
 
 type AffairsPropsType = {
     data: AffairType[] // need to fix any
-    setFilter: (setFilter: FilterType)=> void
-    deleteAffairCallback: (_id: number)=> void
+    setFilter: (setFilter: FilterType) => void
+    deleteAffairCallback: (_id: number) => void
     filter: FilterType
 }
 
 function Affairs(props: AffairsPropsType) {
     const setAll = () => {
-        {props.setFilter('all')}
+        props.setFilter('all')
+        // need to fix
     }
     const setHigh = () => {
-        {props.setFilter('high')}
+        props.setFilter('high')
         // need to fix
     }
     const setMiddle = () => {
-        {props.setFilter('middle')}
+        props.setFilter('middle')
+
         // need to fix
     }
     const setLow = () => {
-        {props.setFilter('low')}
+        props.setFilter('low')
         // need to fix
     }
 
@@ -54,7 +56,6 @@ function Affairs(props: AffairsPropsType) {
                     id={'hw2-button-high'}
                     onClick={setHigh}
                     className={cnHigh}
-
                 >
                     High
                 </button>
