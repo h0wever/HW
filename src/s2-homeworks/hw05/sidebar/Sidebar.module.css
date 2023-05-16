@@ -1,25 +1,36 @@
 .sidebar {
+
 }
 
 .sidebar.open {
+
 }
 
 .background {
+    background-color: #00cc22;
 }
 
 .nav {
+    color: #00163d;
+    background-color: #00cc22;
+
 }
 
 .nav a {
 }
 
 .nav a:hover {
+    color: #b494fa;
 }
 
 .nav a.active {
+    color: #fa5858;
 }
 .close {
+    background-color: #00cc22;
+
 }
 
 .close img {
+
 }
