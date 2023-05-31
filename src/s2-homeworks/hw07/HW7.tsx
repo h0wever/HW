@@ -10,6 +10,11 @@ import s from './HW7.module.css'
 * 3 - в файле SuperRadio.tsx дописать name, checked, value (узнать для чего в радио name)
 * 4 - сделать стили в соответствии с дизайном
 * */
+export type ArrType = TypeArr[]
+export type TypeArr = {
+    id: string
+    value: string
+}
 
 const arr = [
     { id: 1, value: 'x' },
