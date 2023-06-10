@@ -13,7 +13,7 @@ import s from './HW7.module.css'
 
 export type TypeArr = {
     id: number
-    value: string
+    value: string | number
 }
 
 const arr = [
@@ -25,7 +25,7 @@ const arr = [
 ] // value может быть изменено
 
 const HW7 = () => {
-    const [value, onChangeOption] = useState('x') // селект и радио должны работать синхронно
+    const [value, onChangeOption] = useState(1) // селект и радио должны работать синхронно
 
     return (
         <div id={'hw7'}>
