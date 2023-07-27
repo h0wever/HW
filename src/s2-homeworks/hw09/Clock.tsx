@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import SuperButton from '../hw04/common/c2-SuperButton/SuperButton'
 import {restoreState} from '../hw06/localStorage/localStorage'
 import s from './Clock.module.css'
+import {dividerClasses} from "@mui/material";
 
 function Clock() {
     const [timerId, setTimerId] = useState<number | undefined>(undefined)
@@ -12,9 +13,8 @@ function Clock() {
     const start = () => {
         // пишут студенты // запустить часы (должно отображаться реальное время, а не +1)
         // сохранить ид таймера (https://learn.javascript.ru/settimeout-setinterval#setinterval)
-
+        setDate(new Date())
     }
-
     const stop = () => {
         // пишут студенты // поставить часы на паузу, обнулить ид таймера (timerId <- undefined)
 
@@ -66,7 +66,7 @@ function Clock() {
             <div className={s.buttonsContainer}>
                 <SuperButton
                     id={'hw9-button-start'}
-                    disabled={true} // пишут студенты // задизэйблить если таймер запущен
+                    disabled={false} // пишут студенты // задизэйблить если таймер запущен
                     onClick={start}
                 >
                     start
